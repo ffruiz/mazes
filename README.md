@@ -56,7 +56,7 @@ poetry install
 
 Then run `runner.py` with poetry and scalene
 ```bash
-poetry run scalene runner.py
+poetry run scalene runner.py --html --outfile _files/profiling.html
 ```
 
 ------
