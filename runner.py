@@ -85,7 +85,7 @@ def create_animation(title, algo, maze):
 result_df, good_mazes = simulate(1000)
 
 result_agg = result_df.groupby(["finished", "algo"])[
-    "seconds", "n_explored", "length_path"
+    ["seconds", "n_explored", "length_path"]
 ].mean()
 
 result_agg["count"] = result_df.groupby(["finished", "algo"]).size()
