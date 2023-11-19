@@ -48,6 +48,17 @@ A-star explores nodes slightly slower than the other two algorithms because it h
 All results can be repoduced with `runner.py`. 
 Doesn't work in Windows and might require some dependencies.
 
+To run the results and the profiling first install the dependencies:
+
+```bash
+poetry install
+```
+
+Then run `runner.py` with poetry and scalene
+```bash
+poetry run scalene runner.py
+```
+
 ------
 
 ##### Resources
